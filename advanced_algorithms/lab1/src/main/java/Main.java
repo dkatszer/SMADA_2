@@ -4,7 +4,6 @@ import org.jgrapht.alg.shortestpath.DijkstraShortestPath;
 import org.jgrapht.graph.DefaultWeightedEdge;
 import org.jgrapht.graph.SimpleDirectedWeightedGraph;
 
-import javax.swing.*;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashSet;
@@ -19,15 +18,23 @@ public class Main {
         Graph<Integer, DefaultWeightedEdge> graph = createGraphOfVertex(inputFile);
         initGraphEdges(graph, inputFile);
 
-        DijkstraShortestPath dijkstraShortestPath
-                = new DijkstraShortestPath(graph);
-        GraphPath path = dijkstraShortestPath
-                .getPath(1, 20);
-        List<Integer> shortestPath = path.getVertexList();
-        String vertexes = shortestPath.stream().map(Object::toString)
-                .collect(Collectors.joining(", "));
-        System.out.println(vertexes);
-        System.out.println(path.getWeight());
+        DijkstraShortestPathResolver dijkstra = new DijkstraShortestPathResolver(graph);
+        PathInGraph shortestPath = dijkstra.findShortestPathBetween(1, 20);
+        System.out.println(shortestPath);
+
+        // Already implemented algorithm in the library.
+        // It is used only for verification purpose.
+        // My version of algorithm is implemented in DijkstraShortestPathResolver.
+
+//        DijkstraShortestPath dijkstraShortestPath
+//                = new DijkstraShortestPath(graph);
+//        GraphPath path = dijkstraShortestPath
+//                .getPath(1, 20);
+//        List<Integer> shortestPath2 = path.getVertexList();
+//        String vertexes = shortestPath2.stream().map(Object::toString)
+//                .collect(Collectors.joining(", "));
+//        System.out.println(vertexes);
+//        System.out.println(path.getWeight());
     }
 
     private static void initGraphEdges(Graph<Integer, DefaultWeightedEdge> graph, File inputFile) throws FileNotFoundException {
