@@ -15,11 +15,15 @@ public class Main {
         initGraphEdges(graph, inputFile);
 
         FordFulkersonResolver fordFulkersonresolver = new FordFulkersonResolver(graph);
+        double maxFlow = fordFulkersonresolver.calculateMaxFlow(10, 60);
+        System.out.println("max_flow(10,60) = " + maxFlow);
+//TODO max_flow(1,?)=10
     }
+
     private static void initGraphEdges(Graph<Integer, DefaultWeightedEdge> graph, File inputFile) throws FileNotFoundException {
         try (var scanner = new Scanner(inputFile)) {
             while (scanner.hasNextLine()) {
-                String[] line = scanner.nextLine().split(" +");
+                String[] line = scanner.nextLine().split("\\s+");
                 Integer source = Integer.valueOf(line[0].trim());
                 Integer target = Integer.valueOf(line[1].trim());
                 Double edgeWeight = Double.valueOf(line[2].trim());
@@ -34,7 +38,7 @@ public class Main {
         try (var scanner = new Scanner(inputFile)) {
             Set<Integer> vertexes = new HashSet<>();
             while (scanner.hasNextLine()) {
-                String[] line = scanner.nextLine().split(";");
+                String[] line = scanner.nextLine().split("\\s+");
                 vertexes.add(Integer.valueOf(line[0].trim()));
                 vertexes.add(Integer.valueOf(line[1].trim()));
             }
