@@ -5,6 +5,7 @@ import org.jgrapht.graph.SimpleDirectedWeightedGraph;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.HashSet;
+import java.util.Optional;
 import java.util.Scanner;
 import java.util.Set;
 
@@ -14,12 +15,20 @@ public class Main {
         Graph<Integer, DefaultWeightedEdge> graph = createGraphOfVertex(inputFile);
         initGraphEdges(graph, inputFile);
 
+        exercise_1(graph);
+        exercise_2(graph);
+    }
+    public static void exercise_1(Graph<Integer, DefaultWeightedEdge> graph){
         FordFulkersonResolver fordFulkersonresolver = new FordFulkersonResolver(graph);
         double maxFlow = fordFulkersonresolver.calculateMaxFlow(10, 60);
         System.out.println("max_flow(10,60) = " + maxFlow);
-//TODO max_flow(1,?)=10
     }
-
+    public static void exercise_2(Graph<Integer, DefaultWeightedEdge> graph){
+        FordFulkersonResolver fordFulkersonresolver = new FordFulkersonResolver(graph);
+        Optional<Integer> targetVertexForSpecificMaxFlow = fordFulkersonresolver.findTargetVertexForSpecificMaxFlow(1, 10);
+        System.out.println("max_flow(1,?)=10   ? = "+targetVertexForSpecificMaxFlow.orElse(-1));
+//        DOES NOT FIND. But algorithm is correctly writte. It is tested.
+    }
     private static void initGraphEdges(Graph<Integer, DefaultWeightedEdge> graph, File inputFile) throws FileNotFoundException {
         try (var scanner = new Scanner(inputFile)) {
             while (scanner.hasNextLine()) {

@@ -3,6 +3,8 @@ import org.jgrapht.graph.DefaultWeightedEdge;
 import org.jgrapht.graph.SimpleDirectedWeightedGraph;
 import org.junit.Test;
 
+import java.util.Optional;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class FordFulkersonResolverTest {
@@ -34,6 +36,34 @@ public class FordFulkersonResolverTest {
 
         //then
         assertThat(result).isEqualTo(18);
+    }
+
+    @Test
+    public void shouldFindTargetCorrectlyForSpecificMaxFlow() {
+        //given
+        var graph = new SimpleDirectedWeightedGraph<Integer, DefaultWeightedEdge>(DefaultWeightedEdge.class);
+        addVertexes(graph, 1, 2, 3, 4, 5, 6, 7);
+        addEdges(graph,
+                Edge.of(1, 2, 9),
+                Edge.of(1, 5, 9),
+                Edge.of(2, 3, 7),
+                Edge.of(2, 4, 3),
+                Edge.of(3, 4, 4),
+                Edge.of(3, 7, 6),
+                Edge.of(4, 6, 2),
+                Edge.of(4, 7, 9),
+                Edge.of(5, 4, 3),
+                Edge.of(5, 6, 6),
+                Edge.of(6, 7, 8)
+        );
+        objectUnderTest = new FordFulkersonResolver(graph);
+
+        //when
+        Optional<Integer> target = objectUnderTest.findTargetVertexForSpecificMaxFlow(1, 10);
+
+        //then
+        assertThat(target.isPresent()).isTrue();
+        assertThat(target.get()).isEqualTo(4);
     }
 
     private void addEdges(Graph<Integer, DefaultWeightedEdge> graph, Edge... edges) {

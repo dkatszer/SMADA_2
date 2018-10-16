@@ -2,22 +2,29 @@ import org.jgrapht.Graph;
 import org.jgrapht.graph.DefaultWeightedEdge;
 import org.jgrapht.graph.SimpleDirectedWeightedGraph;
 
+import java.util.HashSet;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 
 public class FordFulkersonResolver {
     private Graph<Integer, DefaultWeightedEdge> origin;
     private Graph<Integer, DefaultWeightedEdge> editedGraph;
-    private Graph<Integer, DefaultWeightedEdge> residualNetwork = new SimpleDirectedWeightedGraph<>(DefaultWeightedEdge.class);
+    private Graph<Integer, DefaultWeightedEdge> residualNetwork;
 
     private BFSAlgorithm bfsAlgorithm;
 
     public FordFulkersonResolver(Graph<Integer, DefaultWeightedEdge> graph) {
         this.origin = graph;
+    }
+
+    private void init(Graph<Integer, DefaultWeightedEdge> graph) {
         this.editedGraph = copy(graph);
         this.bfsAlgorithm = new BFSAlgorithm(editedGraph);
+        this.residualNetwork  = new SimpleDirectedWeightedGraph<>(DefaultWeightedEdge.class);
         addVertexes(residualNetwork, graph.vertexSet());
     }
+
     private void addVertexes(Graph<Integer, DefaultWeightedEdge> graph, Set<Integer> vertexes) {
         for (int vertex : vertexes) {
             graph.addVertex(vertex);
@@ -25,6 +32,7 @@ public class FordFulkersonResolver {
     }
 
     public double calculateMaxFlow(Integer source, Integer target) {
+        init(this.origin);
         double result = 0;
         double flowUpdate = 0;
         do {
@@ -32,6 +40,18 @@ public class FordFulkersonResolver {
             result += flowUpdate;
         } while (flowUpdate != 0);
         return result;
+    }
+
+    public Optional<Integer> findTargetVertexForSpecificMaxFlow(Integer source, double targetMaxFlow) {
+        Set<Integer> vertexes = new HashSet<>(origin.vertexSet());
+        vertexes.remove(source);
+        for (Integer vertex : vertexes) {
+            double maxFlow = calculateMaxFlow(source, vertex);
+            if(maxFlow == targetMaxFlow){
+                return Optional.of(vertex);
+            }
+        }
+        return Optional.empty();
     }
 
     private double updateFlowByOnePathBetween(Integer source, Integer target) {
