@@ -10,16 +10,19 @@ public class BFSAlgorithm {
         this.graph = graph;
     }
 
-    public List<Integer> findPathBetween(Integer source, Integer target){
+    public List<Integer> findPathBetween(Integer source, Integer target) {
         Map<Integer, Integer> previousVertexTable = createReversedPathTableOfSearch(source, target);
-        return extractPath(source, target, previousVertexTable);
-
+        if(!previousVertexTable.get(target).equals(Integer.MAX_VALUE)){
+            return extractPath(source, target, previousVertexTable);
+        }else {
+            return List.of();
+        }
     }
 
     private List<Integer> extractPath(Integer source, Integer target, Map<Integer, Integer> previousVertexTable) {
         List<Integer> result = new ArrayList<>();
         Integer pathPointer = target;
-        while(!pathPointer.equals(source)){
+        while (!pathPointer.equals(source)) {
             result.add(pathPointer);
             pathPointer = previousVertexTable.get(pathPointer);
         }
@@ -35,17 +38,17 @@ public class BFSAlgorithm {
 
         toVisitVertexes.add(source);
 
-        while (!toVisitVertexes.isEmpty()){
-            Integer underConsideration = toVisitVertexes.element();
+        while (!toVisitVertexes.isEmpty()) {
+            Integer underConsideration = toVisitVertexes.remove();
             visitedVertexes.add(underConsideration);
-            Set<DefaultWeightedEdge> outgoingEdgesOfSource = graph.outgoingEdgesOf(source);
-            for(DefaultWeightedEdge edge: outgoingEdgesOfSource){
+            Set<DefaultWeightedEdge> outgoingEdgesOfSource = graph.outgoingEdgesOf(underConsideration);
+            for (DefaultWeightedEdge edge : outgoingEdgesOfSource) {
                 Integer neighbour = graph.getEdgeTarget(edge);
-                if(!visitedVertexes.contains(neighbour)){
+                if (!visitedVertexes.contains(neighbour)) {
                     toVisitVertexes.add(neighbour);
                     previousVertexTable.put(neighbour, underConsideration);
                 }
-                if(neighbour.equals(target)){
+                if (neighbour.equals(target)) {
                     break;
                 }
             }
@@ -55,8 +58,8 @@ public class BFSAlgorithm {
 
     private Map<Integer, Integer> initPreviousVertex(Integer source) {
         HashMap<Integer, Integer> result = new HashMap<>();
-        graph.vertexSet().forEach(v -> result.put(v ,Integer.MAX_VALUE));
-        result.put(source,source);
+        graph.vertexSet().forEach(v -> result.put(v, Integer.MAX_VALUE));
+        result.put(source, source);
         return result;
     }
 }

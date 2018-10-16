@@ -3,6 +3,7 @@ import org.jgrapht.graph.DefaultWeightedEdge;
 import org.jgrapht.graph.SimpleDirectedWeightedGraph;
 
 import java.util.List;
+import java.util.Set;
 
 public class FordFulkersonResolver {
     private Graph<Integer, DefaultWeightedEdge> origin;
@@ -14,28 +15,63 @@ public class FordFulkersonResolver {
     public FordFulkersonResolver(Graph<Integer, DefaultWeightedEdge> graph) {
         this.origin = graph;
         this.editedGraph = copy(graph);
-
         this.bfsAlgorithm = new BFSAlgorithm(editedGraph);
+        addVertexes(residualNetwork, graph.vertexSet());
+    }
+    private void addVertexes(Graph<Integer, DefaultWeightedEdge> graph, Set<Integer> vertexes) {
+        for (int vertex : vertexes) {
+            graph.addVertex(vertex);
+        }
     }
 
-    List<Integer> calculateMaxFlow(Integer source, Integer target) {
+    public double calculateMaxFlow(Integer source, Integer target) {
+        double result = 0;
+        double flowUpdate = 0;
+        do {
+            flowUpdate = updateFlowByOnePathBetween(source, target);
+            result += flowUpdate;
+        } while (flowUpdate != 0);
+        return result;
+    }
+
+    private double updateFlowByOnePathBetween(Integer source, Integer target) {
         List<Integer> path = bfsAlgorithm.findPathBetween(source, target);
         if (path != null && !path.isEmpty()) {
-            int min = path.stream().mapToInt(Integer::intValue).min().getAsInt();
-            substractFlow(path, min);
-            updateResidualNetworkWithPathFlow(path, min);
+            double minWeightValue = findMinEdgeValueOfPath(path);
+            substractFlow(path, minWeightValue);
+            updateResidualNetworkWithPathFlow(path, minWeightValue);
+            return minWeightValue;
         }
-        return null;//TODO
+        return 0;
     }
 
-    private void updateResidualNetworkWithPathFlow(List<Integer> path, int min) {
+    private double findMinEdgeValueOfPath(List<Integer> path) {
+        double minEdgeWeight = Double.MAX_VALUE;
         for (int i = 0; i < path.size() - 1; i++) {
-//            TODO
+            DefaultWeightedEdge edge = editedGraph.getEdge(path.get(i), path.get(i + 1));
+            double edgeWeight = editedGraph.getEdgeWeight(edge);
+            if (minEdgeWeight > edgeWeight) {
+                minEdgeWeight = edgeWeight;
+            }
+        }
+        return minEdgeWeight;
+    }
+
+    private void updateResidualNetworkWithPathFlow(List<Integer> path, double weightToUpdate) {
+        for (int i = 0; i < path.size() - 1; i++) {
+            DefaultWeightedEdge edge = residualNetwork.getEdge(path.get(i), path.get(i + 1));
+            if (edge != null) {
+                double currentWeight = residualNetwork.getEdgeWeight(edge);
+                residualNetwork.setEdgeWeight(edge, currentWeight + weightToUpdate);
+            } else {
+                edge = residualNetwork.addEdge(path.get(i), path.get(i + 1));
+                residualNetwork.setEdgeWeight(edge, weightToUpdate);
+            }
         }
 
     }
 
-    private void substractFlow(List<Integer> path, int subtrahend) {
+    private void substractFlow(List<Integer> path, double subtrahend) {
         for (int i = 0; i < path.size() - 1; i++) {
             DefaultWeightedEdge edge = editedGraph.getEdge(path.get(i), path.get(i + 1));
             double edgeWeight = editedGraph.getEdgeWeight(edge);
