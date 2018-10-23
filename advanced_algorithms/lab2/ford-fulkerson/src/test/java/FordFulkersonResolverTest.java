@@ -59,11 +59,10 @@ public class FordFulkersonResolverTest {
         objectUnderTest = new FordFulkersonResolver(graph);
 
         //when
-        Optional<Integer> target = objectUnderTest.findTargetVertexForSpecificMaxFlow(1, 10);
+        Integer target = objectUnderTest.findTargetVertexForMaxFlow(1);
 
         //then
-        assertThat(target.isPresent()).isTrue();
-        assertThat(target.get()).isEqualTo(4);
+        assertThat(target).isEqualTo(7);
     }
 
     private void addEdges(Graph<Integer, DefaultWeightedEdge> graph, Edge... edges) {

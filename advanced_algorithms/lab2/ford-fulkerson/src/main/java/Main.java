@@ -25,9 +25,8 @@ public class Main {
     }
     public static void exercise_2(Graph<Integer, DefaultWeightedEdge> graph){
         FordFulkersonResolver fordFulkersonresolver = new FordFulkersonResolver(graph);
-        Optional<Integer> targetVertexForSpecificMaxFlow = fordFulkersonresolver.findTargetVertexForSpecificMaxFlow(1, 10);
-        System.out.println("max_flow(1,?)=10   ? = "+targetVertexForSpecificMaxFlow.orElse(-1));
-//        DOES NOT FIND. But algorithm is correctly writte. It is tested.
+        Integer targetForMaxFlow = fordFulkersonresolver.findTargetVertexForMaxFlow(10);
+        System.out.println("max_flow(1,?)= "+fordFulkersonresolver.calculateMaxFlow(10,targetForMaxFlow) +"  ? = " + targetForMaxFlow);
     }
     private static void initGraphEdges(Graph<Integer, DefaultWeightedEdge> graph, File inputFile) throws FileNotFoundException {
         try (var scanner = new Scanner(inputFile)) {

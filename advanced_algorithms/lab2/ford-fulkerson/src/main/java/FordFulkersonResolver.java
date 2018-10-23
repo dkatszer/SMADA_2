@@ -42,16 +42,19 @@ public class FordFulkersonResolver {
         return result;
     }
 
-    public Optional<Integer> findTargetVertexForSpecificMaxFlow(Integer source, double targetMaxFlow) {
+    public Integer findTargetVertexForMaxFlow(Integer source) {
         Set<Integer> vertexes = new HashSet<>(origin.vertexSet());
         vertexes.remove(source);
+        double currentMaxFlow = -1;
+        Integer targetVertex = source;
         for (Integer vertex : vertexes) {
             double maxFlow = calculateMaxFlow(source, vertex);
-            if(maxFlow == targetMaxFlow){
-                return Optional.of(vertex);
+            if(maxFlow > currentMaxFlow){
+                currentMaxFlow = maxFlow;
+                targetVertex = vertex;
             }
         }
-        return Optional.empty();
+        return targetVertex;
     }
 
     private double updateFlowByOnePathBetween(Integer source, Integer target) {
