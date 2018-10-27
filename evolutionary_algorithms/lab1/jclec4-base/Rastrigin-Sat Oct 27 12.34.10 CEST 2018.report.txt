@@ -1,0 +1,307 @@
+Sat Oct 27 12.34.10 CEST 2018
+Generation 0 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@45f45fa1[genotype={0.9502266570643293,3.00595097151887,0.03748672349108378,2.66793023705539,3.104966801396642},fitness=net.sf.jclec.fitness.SimpleValueFitness@534df152[value=44.49514601925209]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@258e2e41[genotype={4.850595663673504,4.69210801038977,4.463327913345174,4.679018865803117,4.686761194657945},fitness=net.sf.jclec.fitness.SimpleValueFitness@55a561cf[value=174.89296926070324]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@7a52f2a2[genotype={3.903932100845391,4.229156957503436,1.776702338007847,4.173202142021093,3.9198720212284344},fitness=net.sf.jclec.fitness.SimpleValueFitness@8909f18[value=94.45601532672424]]
+Average fitness = 94.20436617987319
+Fitness variance = 625.3358150571203
+Generation 10 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@4ddced80[genotype={1.1054680227385996,0.11174989091834193,1.7608067920992667,0.9949551996576759,2.8138332585530885},fitness=net.sf.jclec.fitness.SimpleValueFitness@78e117e3[value=33.146945688891066]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@4ddced80[genotype={1.1054680227385996,0.11174989091834193,1.7608067920992667,0.9949551996576759,2.8138332585530885},fitness=net.sf.jclec.fitness.SimpleValueFitness@78e117e3[value=33.146945688891066]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@4ddced80[genotype={1.1054680227385996,0.11174989091834193,1.7608067920992667,0.9949551996576759,2.8138332585530885},fitness=net.sf.jclec.fitness.SimpleValueFitness@78e117e3[value=33.146945688891066]]
+Average fitness = 33.146945688891066
+Fitness variance = 0.0
+Generation 20 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@2ea227af[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8138332585530885},fitness=net.sf.jclec.fitness.SimpleValueFitness@363ee3a2[value=32.04947458839094]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@2ea227af[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8138332585530885},fitness=net.sf.jclec.fitness.SimpleValueFitness@363ee3a2[value=32.04947458839094]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@2ea227af[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8138332585530885},fitness=net.sf.jclec.fitness.SimpleValueFitness@363ee3a2[value=32.04947458839094]]
+Average fitness = 32.04947458839094
+Fitness variance = 0.0
+Generation 30 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@4690b489[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8138332585530885},fitness=net.sf.jclec.fitness.SimpleValueFitness@3eb7fc54[value=32.04947458839094]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@4690b489[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8138332585530885},fitness=net.sf.jclec.fitness.SimpleValueFitness@3eb7fc54[value=32.04947458839094]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@4690b489[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8138332585530885},fitness=net.sf.jclec.fitness.SimpleValueFitness@3eb7fc54[value=32.04947458839094]]
+Average fitness = 32.04947458839094
+Fitness variance = 0.0
+Generation 40 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@7f552bd3[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8138332585530885},fitness=net.sf.jclec.fitness.SimpleValueFitness@460d0a57[value=32.04947458839094]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@7f552bd3[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8138332585530885},fitness=net.sf.jclec.fitness.SimpleValueFitness@460d0a57[value=32.04947458839094]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@7f552bd3[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8138332585530885},fitness=net.sf.jclec.fitness.SimpleValueFitness@460d0a57[value=32.04947458839094]]
+Average fitness = 32.04947458839094
+Fitness variance = 0.0
+Generation 50 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@47d90b9e[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8138332585530885},fitness=net.sf.jclec.fitness.SimpleValueFitness@3aefe5e5[value=32.04947458839094]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@47d90b9e[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8138332585530885},fitness=net.sf.jclec.fitness.SimpleValueFitness@3aefe5e5[value=32.04947458839094]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@47d90b9e[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8138332585530885},fitness=net.sf.jclec.fitness.SimpleValueFitness@3aefe5e5[value=32.04947458839094]]
+Average fitness = 32.04947458839094
+Fitness variance = 0.0
+Generation 60 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@149e0f5d[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8421442980611973},fitness=net.sf.jclec.fitness.SimpleValueFitness@2f7c2f4f[value=30.642160064799956]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@149e0f5d[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8421442980611973},fitness=net.sf.jclec.fitness.SimpleValueFitness@2f7c2f4f[value=30.642160064799956]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@149e0f5d[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8421442980611973},fitness=net.sf.jclec.fitness.SimpleValueFitness@2f7c2f4f[value=30.642160064799956]]
+Average fitness = 30.642160064799956
+Fitness variance = 0.0
+Generation 70 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@6af93788[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8421442980611973},fitness=net.sf.jclec.fitness.SimpleValueFitness@36c88a32[value=30.642160064799956]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@6af93788[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8421442980611973},fitness=net.sf.jclec.fitness.SimpleValueFitness@36c88a32[value=30.642160064799956]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@6af93788[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8421442980611973},fitness=net.sf.jclec.fitness.SimpleValueFitness@36c88a32[value=30.642160064799956]]
+Average fitness = 30.642160064799956
+Fitness variance = 0.0
+Generation 80 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@7880cdf3[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@1c93084c[value=30.627431977532645]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@7880cdf3[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@1c93084c[value=30.627431977532645]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@7880cdf3[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@1c93084c[value=30.627431977532645]]
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 90 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@6ef888f6[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@7ce3cb8e[value=30.627431977532645]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@6ef888f6[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@7ce3cb8e[value=30.627431977532645]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@6ef888f6[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@7ce3cb8e[value=30.627431977532645]]
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 100 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@78b66d36[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@bef2d72[value=30.627431977532645]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@78b66d36[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@bef2d72[value=30.627431977532645]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@78b66d36[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@bef2d72[value=30.627431977532645]]
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 110 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@69b2283a[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@6fe7aac8[value=30.627431977532645]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@69b2283a[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@6fe7aac8[value=30.627431977532645]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@69b2283a[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@6fe7aac8[value=30.627431977532645]]
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 120 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@1d119efb[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@76908cc0[value=30.627431977532645]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@1d119efb[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@76908cc0[value=30.627431977532645]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@1d119efb[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@76908cc0[value=30.627431977532645]]
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 130 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@2473d930[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@49b0b76[value=30.627431977532645]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@2473d930[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@49b0b76[value=30.627431977532645]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@2473d930[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@49b0b76[value=30.627431977532645]]
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 140 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@769f71a9[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@5ae50ce6[value=30.627431977532645]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@769f71a9[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@5ae50ce6[value=30.627431977532645]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@769f71a9[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@5ae50ce6[value=30.627431977532645]]
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 150 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@6f96c77[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@3ba9ad43[value=30.627431977532645]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@6f96c77[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@3ba9ad43[value=30.627431977532645]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@6f96c77[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@3ba9ad43[value=30.627431977532645]]
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 160 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@49d904ec[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@3d680b5a[value=30.627431977532645]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@49d904ec[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@3d680b5a[value=30.627431977532645]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@49d904ec[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@3d680b5a[value=30.627431977532645]]
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 170 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@4b5d6a01[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@3c419631[value=30.627431977532645]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@4b5d6a01[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@3c419631[value=30.627431977532645]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@4b5d6a01[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@3c419631[value=30.627431977532645]]
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 180 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@418e7838[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@3c130745[value=30.627431977532645]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@418e7838[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@3c130745[value=30.627431977532645]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@418e7838[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8424585058474143},fitness=net.sf.jclec.fitness.SimpleValueFitness@3c130745[value=30.627431977532645]]
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 190 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@cd3fee8[genotype={1.1054680227385996,0.0,1.7608067920992667,0.9949551996576759,1.0743268902962617},fitness=net.sf.jclec.fitness.SimpleValueFitness@470f1802[value=18.980469925348203]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@cd3fee8[genotype={1.1054680227385996,0.0,1.7608067920992667,0.9949551996576759,1.0743268902962617},fitness=net.sf.jclec.fitness.SimpleValueFitness@470f1802[value=18.980469925348203]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@cd3fee8[genotype={1.1054680227385996,0.0,1.7608067920992667,0.9949551996576759,1.0743268902962617},fitness=net.sf.jclec.fitness.SimpleValueFitness@470f1802[value=18.980469925348203]]
+Average fitness = 18.980469925348203
+Fitness variance = 0.0
+Generation 200 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@63021689[genotype={1.1054680227385996,0.0,1.7608067920992667,0.9949551996576759,1.0743268902962617},fitness=net.sf.jclec.fitness.SimpleValueFitness@3e92efc3[value=18.980469925348203]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@63021689[genotype={1.1054680227385996,0.0,1.7608067920992667,0.9949551996576759,1.0743268902962617},fitness=net.sf.jclec.fitness.SimpleValueFitness@3e92efc3[value=18.980469925348203]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@63021689[genotype={1.1054680227385996,0.0,1.7608067920992667,0.9949551996576759,1.0743268902962617},fitness=net.sf.jclec.fitness.SimpleValueFitness@3e92efc3[value=18.980469925348203]]
+Average fitness = 18.980469925348203
+Fitness variance = 0.0
+Generation 210 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@1622f1b[genotype={1.1054680227385996,0.0,1.7608067920992667,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@2e4b8173[value=16.755477654473744]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@1622f1b[genotype={1.1054680227385996,0.0,1.7608067920992667,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@2e4b8173[value=16.755477654473744]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@1622f1b[genotype={1.1054680227385996,0.0,1.7608067920992667,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@2e4b8173[value=16.755477654473744]]
+Average fitness = 16.755477654473744
+Fitness variance = 0.0
+Generation 220 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@70e8f8e[genotype={1.1054680227385996,0.0,1.7608067920992667,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@5bd03f44[value=16.755477654473744]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@70e8f8e[genotype={1.1054680227385996,0.0,1.7608067920992667,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@5bd03f44[value=16.755477654473744]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@70e8f8e[genotype={1.1054680227385996,0.0,1.7608067920992667,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@5bd03f44[value=16.755477654473744]]
+Average fitness = 16.755477654473744
+Fitness variance = 0.0
+Generation 230 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@29626d54[genotype={1.1054680227385996,0.0,1.7608067920992667,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@6e4784bc[value=16.755477654473744]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@29626d54[genotype={1.1054680227385996,0.0,1.7608067920992667,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@6e4784bc[value=16.755477654473744]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@29626d54[genotype={1.1054680227385996,0.0,1.7608067920992667,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@6e4784bc[value=16.755477654473744]]
+Average fitness = 16.755477654473744
+Fitness variance = 0.0
+Generation 240 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@34b7ac2f[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@4b0b0854[value=12.002317468135924]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@34b7ac2f[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@4b0b0854[value=12.002317468135924]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@34b7ac2f[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@4b0b0854[value=12.002317468135924]]
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 250 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@19bb07ed[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@353d0772[value=12.002317468135924]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@19bb07ed[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@353d0772[value=12.002317468135924]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@19bb07ed[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@353d0772[value=12.002317468135924]]
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 260 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@2667f029[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@57c758ac[value=12.002317468135924]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@2667f029[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@57c758ac[value=12.002317468135924]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@2667f029[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@57c758ac[value=12.002317468135924]]
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 270 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@a9cd3b1[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@64cd705f[value=12.002317468135924]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@a9cd3b1[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@64cd705f[value=12.002317468135924]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@a9cd3b1[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@64cd705f[value=12.002317468135924]]
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 280 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@9225652[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@6a400542[value=12.002317468135924]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@9225652[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@6a400542[value=12.002317468135924]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@9225652[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@6a400542[value=12.002317468135924]]
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 290 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@6580cfdd[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@63355449[value=12.002317468135924]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@6580cfdd[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@63355449[value=12.002317468135924]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@6580cfdd[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@63355449[value=12.002317468135924]]
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 300 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@9353778[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@48ae9b55[value=12.002317468135924]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@9353778[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@48ae9b55[value=12.002317468135924]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@9353778[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@48ae9b55[value=12.002317468135924]]
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 310 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@1700915[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@c267ef4[value=12.002317468135924]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@1700915[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@c267ef4[value=12.002317468135924]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@1700915[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@c267ef4[value=12.002317468135924]]
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 320 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@30ee2816[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@635eaaf1[value=12.002317468135924]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@30ee2816[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@635eaaf1[value=12.002317468135924]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@30ee2816[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@635eaaf1[value=12.002317468135924]]
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 330 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@5c30a9b0[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@1139b2f3[value=12.002317468135924]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@5c30a9b0[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@1139b2f3[value=12.002317468135924]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@5c30a9b0[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@1139b2f3[value=12.002317468135924]]
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 340 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@7a69b07[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@3f197a46[value=12.002317468135924]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@7a69b07[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@3f197a46[value=12.002317468135924]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@7a69b07[genotype={1.1054680227385996,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@3f197a46[value=12.002317468135924]]
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 350 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@636be97c[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@1817d444[value=8.663750308141264]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@636be97c[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@1817d444[value=8.663750308141264]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@636be97c[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@1817d444[value=8.663750308141264]]
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 360 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@6ca8564a[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@31368b99[value=8.663750308141264]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@6ca8564a[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@31368b99[value=8.663750308141264]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@6ca8564a[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@31368b99[value=8.663750308141264]]
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 370 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@1725dc0f[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@4ac3c60d[value=8.663750308141264]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@1725dc0f[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@4ac3c60d[value=8.663750308141264]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@1725dc0f[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@4ac3c60d[value=8.663750308141264]]
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 380 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@4facf68f[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@41e36e46[value=8.663750308141264]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@4facf68f[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@41e36e46[value=8.663750308141264]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@4facf68f[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@41e36e46[value=8.663750308141264]]
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 390 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@15c43bd9[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@4f209819[value=8.663750308141264]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@15c43bd9[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@4f209819[value=8.663750308141264]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@15c43bd9[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@4f209819[value=8.663750308141264]]
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 400 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@15eb5ee5[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@39529185[value=8.663750308141264]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@15eb5ee5[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@39529185[value=8.663750308141264]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@15eb5ee5[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@39529185[value=8.663750308141264]]
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 410 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@72f926e6[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@31c88ec8[value=8.663750308141264]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@72f926e6[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@31c88ec8[value=8.663750308141264]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@72f926e6[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@31c88ec8[value=8.663750308141264]]
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 420 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@1cbbffcd[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@481a996b[value=8.663750308141264]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@1cbbffcd[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@481a996b[value=8.663750308141264]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@1cbbffcd[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@481a996b[value=8.663750308141264]]
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 430 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@3d51f06e[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@28eaa59a[value=8.663750308141264]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@3d51f06e[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@28eaa59a[value=8.663750308141264]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@3d51f06e[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@28eaa59a[value=8.663750308141264]]
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 440 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@3427b02d[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@41fbdac4[value=8.663750308141264]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@3427b02d[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@41fbdac4[value=8.663750308141264]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@3427b02d[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@41fbdac4[value=8.663750308141264]]
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 450 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@3c407114[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@c33b74f[value=8.663750308141264]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@3c407114[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@c33b74f[value=8.663750308141264]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@3c407114[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@c33b74f[value=8.663750308141264]]
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 460 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@130161f7[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@619713e5[value=8.663750308141264]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@130161f7[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@619713e5[value=8.663750308141264]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@130161f7[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@619713e5[value=8.663750308141264]]
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 470 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@708f5957[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@7722c3c3[value=8.663750308141264]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@708f5957[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@7722c3c3[value=8.663750308141264]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@708f5957[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@7722c3c3[value=8.663750308141264]]
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 480 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@2ef3eef9[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@291ae[value=8.663750308141264]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@2ef3eef9[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@291ae[value=8.663750308141264]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@2ef3eef9[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@291ae[value=8.663750308141264]]
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 490 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@61df66b6[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@16ec5519[value=8.663750308141264]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@61df66b6[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@16ec5519[value=8.663750308141264]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@61df66b6[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@16ec5519[value=8.663750308141264]]
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 500 Report
+Best individual: net.sf.jclec.realarray.RealArrayIndividual@2f7298b[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@1ea9f6af[value=8.663750308141264]]
+Worst individual: net.sf.jclec.realarray.RealArrayIndividual@2f7298b[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@1ea9f6af[value=8.663750308141264]]
+Median individual: net.sf.jclec.realarray.RealArrayIndividual@2f7298b[genotype={0.0,0.0,1.8473829207896495,0.9949551996576759,0.0},fitness=net.sf.jclec.fitness.SimpleValueFitness@1ea9f6af[value=8.663750308141264]]
+Average fitness = 8.663750308141264
+Fitness variance = 0.0

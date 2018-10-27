@@ -1,0 +1,307 @@
+Sat Oct 27 12.35.59 CEST 2018
+Generation 0 Report
+Best individual: 44.49514601925209
+Worst individual: 174.89296926070324
+Median individual: 94.45601532672424
+Average fitness = 94.20436617987319
+Fitness variance = 625.3358150571203
+Generation 10 Report
+Best individual: 33.146945688891066
+Worst individual: 33.146945688891066
+Median individual: 33.146945688891066
+Average fitness = 33.146945688891066
+Fitness variance = 0.0
+Generation 20 Report
+Best individual: 32.04947458839094
+Worst individual: 32.04947458839094
+Median individual: 32.04947458839094
+Average fitness = 32.04947458839094
+Fitness variance = 0.0
+Generation 30 Report
+Best individual: 32.04947458839094
+Worst individual: 32.04947458839094
+Median individual: 32.04947458839094
+Average fitness = 32.04947458839094
+Fitness variance = 0.0
+Generation 40 Report
+Best individual: 32.04947458839094
+Worst individual: 32.04947458839094
+Median individual: 32.04947458839094
+Average fitness = 32.04947458839094
+Fitness variance = 0.0
+Generation 50 Report
+Best individual: 32.04947458839094
+Worst individual: 32.04947458839094
+Median individual: 32.04947458839094
+Average fitness = 32.04947458839094
+Fitness variance = 0.0
+Generation 60 Report
+Best individual: 30.642160064799956
+Worst individual: 30.642160064799956
+Median individual: 30.642160064799956
+Average fitness = 30.642160064799956
+Fitness variance = 0.0
+Generation 70 Report
+Best individual: 30.642160064799956
+Worst individual: 30.642160064799956
+Median individual: 30.642160064799956
+Average fitness = 30.642160064799956
+Fitness variance = 0.0
+Generation 80 Report
+Best individual: 30.627431977532645
+Worst individual: 30.627431977532645
+Median individual: 30.627431977532645
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 90 Report
+Best individual: 30.627431977532645
+Worst individual: 30.627431977532645
+Median individual: 30.627431977532645
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 100 Report
+Best individual: 30.627431977532645
+Worst individual: 30.627431977532645
+Median individual: 30.627431977532645
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 110 Report
+Best individual: 30.627431977532645
+Worst individual: 30.627431977532645
+Median individual: 30.627431977532645
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 120 Report
+Best individual: 30.627431977532645
+Worst individual: 30.627431977532645
+Median individual: 30.627431977532645
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 130 Report
+Best individual: 30.627431977532645
+Worst individual: 30.627431977532645
+Median individual: 30.627431977532645
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 140 Report
+Best individual: 30.627431977532645
+Worst individual: 30.627431977532645
+Median individual: 30.627431977532645
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 150 Report
+Best individual: 30.627431977532645
+Worst individual: 30.627431977532645
+Median individual: 30.627431977532645
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 160 Report
+Best individual: 30.627431977532645
+Worst individual: 30.627431977532645
+Median individual: 30.627431977532645
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 170 Report
+Best individual: 30.627431977532645
+Worst individual: 30.627431977532645
+Median individual: 30.627431977532645
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 180 Report
+Best individual: 30.627431977532645
+Worst individual: 30.627431977532645
+Median individual: 30.627431977532645
+Average fitness = 30.627431977532645
+Fitness variance = 0.0
+Generation 190 Report
+Best individual: 18.980469925348203
+Worst individual: 18.980469925348203
+Median individual: 18.980469925348203
+Average fitness = 18.980469925348203
+Fitness variance = 0.0
+Generation 200 Report
+Best individual: 18.980469925348203
+Worst individual: 18.980469925348203
+Median individual: 18.980469925348203
+Average fitness = 18.980469925348203
+Fitness variance = 0.0
+Generation 210 Report
+Best individual: 16.755477654473744
+Worst individual: 16.755477654473744
+Median individual: 16.755477654473744
+Average fitness = 16.755477654473744
+Fitness variance = 0.0
+Generation 220 Report
+Best individual: 16.755477654473744
+Worst individual: 16.755477654473744
+Median individual: 16.755477654473744
+Average fitness = 16.755477654473744
+Fitness variance = 0.0
+Generation 230 Report
+Best individual: 16.755477654473744
+Worst individual: 16.755477654473744
+Median individual: 16.755477654473744
+Average fitness = 16.755477654473744
+Fitness variance = 0.0
+Generation 240 Report
+Best individual: 12.002317468135924
+Worst individual: 12.002317468135924
+Median individual: 12.002317468135924
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 250 Report
+Best individual: 12.002317468135924
+Worst individual: 12.002317468135924
+Median individual: 12.002317468135924
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 260 Report
+Best individual: 12.002317468135924
+Worst individual: 12.002317468135924
+Median individual: 12.002317468135924
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 270 Report
+Best individual: 12.002317468135924
+Worst individual: 12.002317468135924
+Median individual: 12.002317468135924
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 280 Report
+Best individual: 12.002317468135924
+Worst individual: 12.002317468135924
+Median individual: 12.002317468135924
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 290 Report
+Best individual: 12.002317468135924
+Worst individual: 12.002317468135924
+Median individual: 12.002317468135924
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 300 Report
+Best individual: 12.002317468135924
+Worst individual: 12.002317468135924
+Median individual: 12.002317468135924
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 310 Report
+Best individual: 12.002317468135924
+Worst individual: 12.002317468135924
+Median individual: 12.002317468135924
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 320 Report
+Best individual: 12.002317468135924
+Worst individual: 12.002317468135924
+Median individual: 12.002317468135924
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 330 Report
+Best individual: 12.002317468135924
+Worst individual: 12.002317468135924
+Median individual: 12.002317468135924
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 340 Report
+Best individual: 12.002317468135924
+Worst individual: 12.002317468135924
+Median individual: 12.002317468135924
+Average fitness = 12.002317468135924
+Fitness variance = 0.0
+Generation 350 Report
+Best individual: 8.663750308141264
+Worst individual: 8.663750308141264
+Median individual: 8.663750308141264
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 360 Report
+Best individual: 8.663750308141264
+Worst individual: 8.663750308141264
+Median individual: 8.663750308141264
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 370 Report
+Best individual: 8.663750308141264
+Worst individual: 8.663750308141264
+Median individual: 8.663750308141264
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 380 Report
+Best individual: 8.663750308141264
+Worst individual: 8.663750308141264
+Median individual: 8.663750308141264
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 390 Report
+Best individual: 8.663750308141264
+Worst individual: 8.663750308141264
+Median individual: 8.663750308141264
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 400 Report
+Best individual: 8.663750308141264
+Worst individual: 8.663750308141264
+Median individual: 8.663750308141264
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 410 Report
+Best individual: 8.663750308141264
+Worst individual: 8.663750308141264
+Median individual: 8.663750308141264
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 420 Report
+Best individual: 8.663750308141264
+Worst individual: 8.663750308141264
+Median individual: 8.663750308141264
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 430 Report
+Best individual: 8.663750308141264
+Worst individual: 8.663750308141264
+Median individual: 8.663750308141264
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 440 Report
+Best individual: 8.663750308141264
+Worst individual: 8.663750308141264
+Median individual: 8.663750308141264
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 450 Report
+Best individual: 8.663750308141264
+Worst individual: 8.663750308141264
+Median individual: 8.663750308141264
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 460 Report
+Best individual: 8.663750308141264
+Worst individual: 8.663750308141264
+Median individual: 8.663750308141264
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 470 Report
+Best individual: 8.663750308141264
+Worst individual: 8.663750308141264
+Median individual: 8.663750308141264
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 480 Report
+Best individual: 8.663750308141264
+Worst individual: 8.663750308141264
+Median individual: 8.663750308141264
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 490 Report
+Best individual: 8.663750308141264
+Worst individual: 8.663750308141264
+Median individual: 8.663750308141264
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
+Generation 500 Report
+Best individual: 8.663750308141264
+Worst individual: 8.663750308141264
+Median individual: 8.663750308141264
+Average fitness = 8.663750308141264
+Fitness variance = 0.0
