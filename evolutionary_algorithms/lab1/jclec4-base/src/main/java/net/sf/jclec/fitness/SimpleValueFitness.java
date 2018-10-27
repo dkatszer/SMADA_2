@@ -137,8 +137,6 @@ public class SimpleValueFitness extends AbstractFitness implements ISimpleFitnes
 	@Override
     public String toString() 
     {
-        ToStringBuilder tsb = new ToStringBuilder(this);
-        tsb.append("value", value);
-        return tsb.toString();
+        return value + "";
     }
 }

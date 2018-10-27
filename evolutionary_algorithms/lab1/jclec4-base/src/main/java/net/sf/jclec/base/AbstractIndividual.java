@@ -126,9 +126,6 @@ public abstract class AbstractIndividual<G> implements IIndividual
 	@Override
 	public String toString()
 	{
-		ToStringBuilder tsb = new ToStringBuilder(this);
-		tsb.append("genotype", genotype);
-		tsb.append("fitness", fitness);
-		return tsb.toString();
+		return fitness.toString();
 	}
 }

@@ -284,21 +284,10 @@ public class PopulationReporter implements IAlgorithmListener, IConfigure
 		}		
 		
 		// Do population report
-		StringBuffer sb = new StringBuffer("Generation " + generation + " Report\n");
-		// Best individual
-		IIndividual best = IndividualStatistics.bestIndividual(inhabitants, comparator);		
-		sb.append("Best individual: "+best+"\n");
-		// Worst individual
-		IIndividual worst = IndividualStatistics.worstIndividual(inhabitants, comparator);
-		sb.append("Worst individual: "+worst+"\n");
-		// Median individual
-		IIndividual median = IndividualStatistics.medianIndividual(inhabitants, comparator);
-		sb.append("Median individual: "+median+"\n");		
-		// Average fitness and fitness variance
+		StringBuffer sb = new StringBuffer();
 		double [] avgvar = IndividualStatistics.averageFitnessAndFitnessVariance(inhabitants);
-		sb.append("Average fitness = " + avgvar[0]+"\n");
-		sb.append("Fitness variance = "+ avgvar[1]+"\n");
-		
+		sb.append(avgvar[0]);
+
 		// Write report string to the standard output (if necessary) 
 		if (reportOnConsole) {
 			System.out.println(sb.toString());
