@@ -11,23 +11,28 @@ public class Wektor {
         this.z = z;
     }
 
-    public double length(){
-        return Math.sqrt(Math.pow(x,2) + Math.pow(y,2) + Math.pow(z,2));
+    public double length() {
+        return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2) + Math.pow(z, 2));
     }
 
-    public Wektor vectorMultiply(Wektor other){
+    public Wektor vectorMultiply(Wektor other) {
         return new Wektor(
-                this.y*other.z - this.z*other.y,
-                this.z*other.x - this.x*other.z,
-                this.x*other.y - this.y*other.x
+                this.y * other.z - this.z * other.y,
+                this.z * other.x - this.x * other.z,
+                this.x * other.y - this.y * other.x
         );
     }
 
-    public Wektor scalarMultiply(Wektor other){
+    public Wektor scalarMultiply(Wektor other) {
         return new Wektor(
-            this.x * other.x,
-            this.y * other.y,
-            this.z * other.z
+                this.x * other.x,
+                this.y * other.y,
+                this.z * other.z
         );
+    }
+
+    @Override
+    public String toString() {
+        return String.format("<%f, %f, %f>", x,y,z);
     }
 }

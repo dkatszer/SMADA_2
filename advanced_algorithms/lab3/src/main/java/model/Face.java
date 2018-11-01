@@ -37,7 +37,8 @@ public class Face {
     }
 
     private Wektor normalToFace() {
-//        TODO
-        return null;
+        Wektor u = v3.vectorToOtherPoint(v2);
+        Wektor v = v3.vectorToOtherPoint(v1);
+        return u.vectorMultiply(v);
     }
 }

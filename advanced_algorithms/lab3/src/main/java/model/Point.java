@@ -13,12 +13,17 @@ public class Point {
         this.z = z;
     }
 
-    public double dist(Point o){
+    public double dist(Point o) {
         Wektor wektor = vectorToOtherPoint(o);
         return wektor.length();
     }
 
-    public Wektor vectorToOtherPoint(Point other){
+    public Wektor vectorToOtherPoint(Point other) {
         return new Wektor(other.x - this.x, other.y - this.y, other.z - this.z);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("(%f, %f, %f)", x, y, z);
     }
 }

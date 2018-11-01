@@ -11,6 +11,14 @@ public class Edge {
         this.edgeMainPoint = v2;
     }
 
+    @Override
+    public String toString() {
+        return "Edge{" +
+                "v1=" + v1 +
+                ", v2=" + edgeMainPoint +
+                '}';
+    }
+
     public double dist(Point p0){
         Wektor pointToV2Vector = p0.vectorToOtherPoint(edgeMainPoint);
         Wektor edgeVector = edgeWektor();
