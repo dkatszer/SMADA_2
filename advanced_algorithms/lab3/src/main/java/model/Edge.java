@@ -2,6 +2,8 @@ package model;
 
 import model.math.Vector;
 
+import java.util.stream.DoubleStream;
+
 public class Edge {
     private final Point p0;
     private final Point p1;
@@ -29,18 +31,20 @@ public class Edge {
         if (p1ToPoint.angleBetween(edgeVector) <= 90) {
             return p1ToPoint.length();
         }
-
-        double normal = p0ToPoint.vectorMultiply(edgeVector).length() / edgeVector.length();
-        return normal;
+        return normal(point);
     }
+    public double dist(Edge other) {
+        return DoubleStream.of(
+                p0.dist(other.p0),
+                p0.dist(other.p1),
+                p1.dist(other.p0),
+                p1.dist(other.p1)
+        ).min().getAsDouble();
+    }
+
     private double normal(Point point){
         Vector edgeVector = edgeVector();
         return point.vectorToOtherPoint(p0).vectorMultiply(edgeVector).length() / edgeVector.length();
-    }
-
-    public double dist(Edge other) {
-        Vector edgeVectorsProduct = edgeVector().vectorMultiply(other.edgeVector());
-        return p1.vectorToOtherPoint(other.p1).scalarMultiply(edgeVectorsProduct) / edgeVectorsProduct.length();
     }
 
     private Vector edgeVector() {

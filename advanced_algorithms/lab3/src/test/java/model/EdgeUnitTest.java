@@ -37,4 +37,36 @@ public class EdgeUnitTest {
         //then
         assertThat(result).isEqualTo(3);
     }
+
+    @Test
+    public void should_return_dist_between_left_points_when_lines_of_edges_would_croos_on_right() {
+        //given
+        Edge edge = new Edge(new Point(0,0,0), new Point(5,0,0));
+        Edge edge2 = new Edge(new Point(0,2,0), new Point(5,10,0));
+        //when
+        double dist = edge.dist(edge2);
+        //then
+        assertThat(dist).isEqualTo(new Point(0,0,0).dist(new Point(0,2,0)));
+    }
+    @Test
+    public void should_return_dist_between_right_points_when_lines_of_edges_would_croos_on_right() {
+        //given
+        Edge edge = new Edge(new Point(0,0,0), new Point(5,0,0));
+        Edge edge2 = new Edge(new Point(0,10,0), new Point(5,2,0));
+        //when
+        double dist = edge.dist(edge2);
+        //then
+        assertThat(dist).isEqualTo(new Point(5,0,0).dist(new Point(5,2,0)));
+    }
+
+    @Test
+    public void should_return_dist_between_first_right_and_second_lefts_when_first_edge_is_on_left_to_second() {
+        //given
+        Edge edge = new Edge(new Point(0,0,0), new Point(5,0,0));
+        Edge edge2 = new Edge(new Point(-5,2,0), new Point(-2,2,0));
+        //when
+        double dist = edge.dist(edge2);
+        //then
+        assertThat(dist).isEqualTo(new Point(0,0,0).dist(new Point(-2,2,0)));
+    }
 }
