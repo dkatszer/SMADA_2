@@ -1,6 +1,6 @@
 package model;
 
-import model.math.Wektor;
+import model.math.Vector;
 
 public class Point {
     private final double x;
@@ -14,12 +14,12 @@ public class Point {
     }
 
     public double dist(Point o) {
-        Wektor wektor = vectorToOtherPoint(o);
-        return wektor.length();
+        Vector vector = vectorToOtherPoint(o);
+        return vector.length();
     }
 
-    public Wektor vectorToOtherPoint(Point other) {
-        return new Wektor(other.x - this.x, other.y - this.y, other.z - this.z);
+    public Vector vectorToOtherPoint(Point other) {
+        return new Vector(other.x - this.x, other.y - this.y, other.z - this.z);
     }
 
     @Override

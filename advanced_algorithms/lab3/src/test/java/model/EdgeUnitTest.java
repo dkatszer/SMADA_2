@@ -18,6 +18,17 @@ public class EdgeUnitTest {
     }
 
     @Test
+    public void should_calculate_distance_to_point_which_is_on_rectangular_triangle_edge() {
+        //given
+        Point p = new Point(0,5,0);
+        Edge edge = new Edge(new Point(0,0,0), new Point(5,0,0));
+        //when
+        double result = edge.dist(p);
+        //then
+        assertThat(result).isEqualTo(5);
+    }
+
+    @Test
     public void should_calculate_distance_to_other_edge_correctly() {
         //given
         Edge edge = new Edge(new Point(2,1,4), new Point(-1,1,0));

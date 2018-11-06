@@ -1,6 +1,6 @@
 package model;
 
-import model.math.Wektor;
+import model.math.Vector;
 
 public class Face {
     private final Point v1;
@@ -14,8 +14,8 @@ public class Face {
     }
 
     public double dist(Point point){
-        Wektor normalToFace = normalToFace();
-        return point.vectorToOtherPoint(v3).scalarMultiply(normalToFace).length() / normalToFace.length();
+        Vector normalToFace = normalToFace();
+        return point.vectorToOtherPoint(v3).scalarMultiply(normalToFace) / normalToFace.length();
     }
 
     public double dist(Edge edge){
@@ -36,9 +36,9 @@ public class Face {
         return false;
     }
 
-    private Wektor normalToFace() {
-        Wektor u = v3.vectorToOtherPoint(v2);
-        Wektor v = v3.vectorToOtherPoint(v1);
+    private Vector normalToFace() {
+        Vector u = v3.vectorToOtherPoint(v2);
+        Vector v = v3.vectorToOtherPoint(v1);
         return u.vectorMultiply(v);
     }
 }

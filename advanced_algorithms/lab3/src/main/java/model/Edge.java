@@ -1,6 +1,6 @@
 package model;
 
-import model.math.Wektor;
+import model.math.Vector;
 
 public class Edge {
     private final Point v1;
@@ -19,21 +19,23 @@ public class Edge {
                 '}';
     }
 
-    public double dist(Point p0){
-        Wektor pointToV2Vector = p0.vectorToOtherPoint(edgeMainPoint);
-        Wektor edgeVector = edgeWektor();
-        return pointToV2Vector.vectorMultiply(edgeVector).length() / edgeVector.length();
+    public double dist(Point point){
+        Vector pointToV2Vector = edgeMainPoint.vectorToOtherPoint(point);
+        Vector edgeVector = edgeWektor();
+        double angle = pointToV2Vector.angleBetween(edgeVector);
+        double normal = pointToV2Vector.vectorMultiply(edgeVector).length() / edgeVector.length();
+        return normal;
     }
 
     public double dist(Edge other){
-        Wektor edgeVectorsProduct = edgeWektor().vectorMultiply(other.edgeWektor());
-        return edgeMainPoint.vectorToOtherPoint(other.edgeMainPoint).scalarMultiply(edgeVectorsProduct).length() / edgeVectorsProduct.length();
+        Vector edgeVectorsProduct = edgeWektor().vectorMultiply(other.edgeWektor());
+        return edgeMainPoint.vectorToOtherPoint(other.edgeMainPoint).scalarMultiply(edgeVectorsProduct) / edgeVectorsProduct.length();
     }
 
     /**
-     * EDGE(A,B) - edgeWektor = Wektor from B to A
+     * EDGE(A,B) - edgeWektor = Vector from B to A
      */
-    private Wektor edgeWektor(){
+    private Vector edgeWektor(){
         return edgeMainPoint.vectorToOtherPoint(v1);
     }
 }
