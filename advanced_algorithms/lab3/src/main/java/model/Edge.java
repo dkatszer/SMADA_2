@@ -3,39 +3,47 @@ package model;
 import model.math.Vector;
 
 public class Edge {
-    private final Point v1;
-    private final Point edgeMainPoint; // B
+    private final Point p0;
+    private final Point p1;
 
-    public Edge(Point v1, Point v2) {
-        this.v1 = v1;
-        this.edgeMainPoint = v2;
+    public Edge(Point p0, Point v2) {
+        this.p0 = p0;
+        this.p1 = v2;
     }
 
     @Override
     public String toString() {
         return "Edge{" +
-                "v1=" + v1 +
-                ", v2=" + edgeMainPoint +
+                "p0=" + p0 +
+                ", v2=" + p1 +
                 '}';
     }
 
-    public double dist(Point point){
-        Vector pointToV2Vector = edgeMainPoint.vectorToOtherPoint(point);
-        Vector edgeVector = edgeWektor();
-        double angle = pointToV2Vector.angleBetween(edgeVector);
-        double normal = pointToV2Vector.vectorMultiply(edgeVector).length() / edgeVector.length();
+    public double dist(Point point) {
+        Vector edgeVector = edgeVector();
+        Vector p0ToPoint = p0.vectorToOtherPoint(point);
+        if (p0ToPoint.angleBetween(edgeVector) >= 90) {
+            return p0ToPoint.length();
+        }
+        Vector p1ToPoint = p1.vectorToOtherPoint(point);
+        if (p1ToPoint.angleBetween(edgeVector) <= 90) {
+            return p1ToPoint.length();
+        }
+
+        double normal = p0ToPoint.vectorMultiply(edgeVector).length() / edgeVector.length();
         return normal;
     }
-
-    public double dist(Edge other){
-        Vector edgeVectorsProduct = edgeWektor().vectorMultiply(other.edgeWektor());
-        return edgeMainPoint.vectorToOtherPoint(other.edgeMainPoint).scalarMultiply(edgeVectorsProduct) / edgeVectorsProduct.length();
+    private double normal(Point point){
+        Vector edgeVector = edgeVector();
+        return point.vectorToOtherPoint(p0).vectorMultiply(edgeVector).length() / edgeVector.length();
     }
 
-    /**
-     * EDGE(A,B) - edgeWektor = Vector from B to A
-     */
-    private Vector edgeWektor(){
-        return edgeMainPoint.vectorToOtherPoint(v1);
+    public double dist(Edge other) {
+        Vector edgeVectorsProduct = edgeVector().vectorMultiply(other.edgeVector());
+        return p1.vectorToOtherPoint(other.p1).scalarMultiply(edgeVectorsProduct) / edgeVectorsProduct.length();
+    }
+
+    private Vector edgeVector() {
+        return p0.vectorToOtherPoint(p1);
     }
 }
