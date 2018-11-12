@@ -48,10 +48,6 @@ public class Edge {
             return 0;
         }
         return DoubleStream.of(
-                p0.dist(other.p0),
-                p0.dist(other.p1),
-                p1.dist(other.p0),
-                p1.dist(other.p1),
                 other.dist(p0),
                 other.dist(p1),
                 this.dist(other.p0),
@@ -97,7 +93,7 @@ public class Edge {
 
     private double normal(Point point) {
         Vector edgeVector = edgeVector();
-        return point.vectorToOtherPoint(p0).vectorMultiply(edgeVector).length() / edgeVector.length();
+        return Math.abs(point.vectorToOtherPoint(p0).vectorMultiply(edgeVector).length() / edgeVector.length());
     }
 
     public Vector edgeVector() {

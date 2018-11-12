@@ -4,6 +4,8 @@ import model.math.Vector;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.OptionalDouble;
+import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
 
 public class Face {
@@ -23,7 +25,6 @@ public class Face {
         v2ToV3 = new Edge(v2, v3);
     }
 
-    //    TODO -test it
     public double dist(Point point) {
         Vector normalToFace = normalToFace();
         double perpendicular = Math.abs(v3.vectorToOtherPoint(point).scalarMultiply(normalToFace) / normalToFace.length());
@@ -36,7 +37,8 @@ public class Face {
                 return 0;
             }
         }else{
-            distances.add(perpendicular);
+            //FIXME
+//            distances.add(perpendicular);
         }
         return distances.stream().mapToDouble(d->d).min().getAsDouble();
     }
@@ -61,9 +63,6 @@ public class Face {
         if (intersectsWithEdge(edge)) {
             return 0;
         }
-        Edge v1ToV2 = new Edge(v1, v2);
-        Edge v1ToV3 = new Edge(v1, v3);
-        Edge v2ToV3 = new Edge(v2, v3);
         return DoubleStream.of(
                 v1ToV2.dist(edge),
                 v1ToV3.dist(edge),
@@ -74,10 +73,11 @@ public class Face {
     }
 
     private boolean intersectsWithEdge(Edge edge) {
-        Point v0 = v3;
-        Vector n = normalToFace();
-        double s = n.scalarMultiply(edge.getP0().vectorToOtherPoint(v0)) / n.scalarMultiply(edge.edgeVector());
-        return 0 <= s && s <= 1;
+        return false;
+//        Point v0 = v3;
+//        Vector n = normalToFace();
+//        double s = n.scalarMultiply(edge.getP0().vectorToOtherPoint(v0)) / n.scalarMultiply(edge.edgeVector());
+//        return 0 <= s && s <= 1;
     }
 
     private boolean intersectsWithFace(Face face) {
@@ -88,22 +88,10 @@ public class Face {
         if (intersectsWithFace(other)) {
             return 0;
         } else {
-            List<Edge> thisEdges = getEdges();
-            List<Edge> otherEdges = other.getEdges();
-
-            List<Double> distances = new ArrayList<>();
-            //between all edges
-            thisEdges.forEach(thisEdge -> otherEdges.forEach(otherEdge -> distances.add(thisEdge.dist(otherEdge))));
-            // between all point to surface
-            distances.addAll(List.of(
-                    other.dist(v1),
-                    other.dist(v2),
-                    other.dist(v3)));
-            distances.addAll(List.of(
-                    this.dist(other.v1),
-                    this.dist(other.v2),
-                    this.dist(other.v3)));
-            return distances.stream().mapToDouble(d -> d).min().getAsDouble();
+            List<Double> result = other.getEdges().stream()
+                    .map(this::dist)
+                    .collect(Collectors.toList());
+            return result.stream().mapToDouble(d->d).min().getAsDouble();
         }
     }
 
