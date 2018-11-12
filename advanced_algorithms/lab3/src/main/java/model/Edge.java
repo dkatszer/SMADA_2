@@ -58,9 +58,6 @@ public class Edge {
         return (xy && xz && yz);
     }
 
-    /**
-     * I dont care about case when they are collinear and overlap because then min function in dist will find it and return 0
-     */
     private boolean intersectWithIn2D(Edge other, Dim first, Dim second) {
         Vector r = edgeVector().castTo2D(first, second);
         Point p = p0.castTo2D(first, second);
