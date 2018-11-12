@@ -13,6 +13,18 @@ public class Vector {
         this.z = z;
     }
 
+    public double getX() {
+        return x;
+    }
+
+    public double getY() {
+        return y;
+    }
+
+    public double getZ() {
+        return z;
+    }
+
     public double length() {
         return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2) + Math.pow(z, 2));
     }
@@ -85,5 +97,9 @@ public class Vector {
     @Override
     public int hashCode() {
         return Objects.hash(x, y, z);
+    }
+
+    public Vector multiply(double multiplier) {
+        return new Vector(x * multiplier, y * multiplier, z * multiplier);
     }
 }

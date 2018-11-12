@@ -4,7 +4,6 @@ import model.math.Vector;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.OptionalDouble;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
 
@@ -38,9 +37,20 @@ public class Face {
             }
         }else{
             //FIXME
-//            distances.add(perpendicular);
+            Point pointPlaneProjection = projectionToPlane(point);
+            if(isPointOnFace(pointPlaneProjection)){
+                distances.add(perpendicular);
+            }
         }
         return distances.stream().mapToDouble(d->d).min().getAsDouble();
+    }
+
+    private Point projectionToPlane(Point point) {
+        Vector normal = normalToFace();
+        double licznik = normal.scalarMultiply(v3.toVectorFromZeroZeroZero()) - normal.scalarMultiply(point.toVectorFromZeroZeroZero());
+        double mianownik = Math.pow(normal.length(), 2);
+        double t = licznik / mianownik;
+        return point.add(normal.multiply(t));
     }
 
     private boolean isPointOnFace(Point point) {
@@ -91,6 +101,7 @@ public class Face {
             List<Double> result = other.getEdges().stream()
                     .map(this::dist)
                     .collect(Collectors.toList());
+            getEdges().stream().map(other::dist).forEach(result::add);
             return result.stream().mapToDouble(d->d).min().getAsDouble();
         }
     }

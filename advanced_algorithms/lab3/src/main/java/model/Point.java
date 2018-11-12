@@ -37,8 +37,16 @@ public class Point {
         }
     }
 
+    public Vector toVectorFromZeroZeroZero(){
+        return new Vector(x,y,z);
+    }
+
     @Override
     public String toString() {
         return String.format("(%f, %f, %f)", x, y, z);
+    }
+
+    public Point add(Vector vector) {
+        return new Point(x + vector.getX() , y + vector.getY(), z + vector.getZ());
     }
 }

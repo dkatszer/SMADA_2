@@ -1,5 +1,6 @@
 package model;
 
+import org.assertj.core.data.Offset;
 import org.junit.Test;
 import util.DataReader;
 
@@ -36,6 +37,6 @@ public class ExerciseTest {
         //when
         double dist = solid_1.dist(solid_2);
         //then
-        assertThat(dist).isEqualTo(0);
+        assertThat(dist).isEqualTo(8.766524, Offset.offset(0.00001));
     }
 }
