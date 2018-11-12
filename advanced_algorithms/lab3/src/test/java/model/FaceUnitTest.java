@@ -1,5 +1,6 @@
 package model;
 
+import org.assertj.core.data.Offset;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -19,7 +20,7 @@ public class FaceUnitTest {
         double dist = face.dist(point);
 
         //then
-        assertThat(dist).isEqualTo(1);
+        assertThat(dist).isEqualTo(Math.sqrt(2)/2, Offset.offset(0.0001));
     }
 
     @Test
