@@ -10,23 +10,50 @@ public class Face {
     private final Point v1;
     private final Point v2;
     private final Point v3;
+    private Edge v1ToV2;
+    private Edge v1ToV3;
+    private Edge v2ToV3;
 
     public Face(Point v1, Point v2, Point v3) {
         this.v1 = v1;
         this.v2 = v2;
         this.v3 = v3;
+        v1ToV2 = new Edge(v1, v2);
+        v1ToV3 = new Edge(v1, v3);
+        v2ToV3 = new Edge(v2, v3);
     }
 
     //    TODO -test it
     public double dist(Point point) {
         Vector normalToFace = normalToFace();
-        return Math.abs(point.vectorToOtherPoint(v3).scalarMultiply(normalToFace) / normalToFace.length());
+        double perpendicular = Math.abs(v3.vectorToOtherPoint(point).scalarMultiply(normalToFace) / normalToFace.length());
+        List<Double> distances = new ArrayList<>(List.of(
+                v1ToV2.dist(point),
+                v1ToV3.dist(point),
+                v2ToV3.dist(point)));
+        if (perpendicular == 0) {
+            if(isPointOnFace(point)){
+                return 0;
+            }
+        }else{
+            distances.add(perpendicular);
+        }
+        return distances.stream().mapToDouble(d->d).min().getAsDouble();
+    }
+
+    private boolean isPointOnFace(Point point) {
+        double a = new Face(v1, v2, point).calculateArea();
+        double b = new Face(v1, v3, point).calculateArea();
+        double c = new Face(v2, v3, point).calculateArea();
+        return calculateArea() == a + b + c;
+    }
+
+    private double calculateArea() {
+        return normalToFace().length() / 2;
     }
 
     private List<Edge> getEdges() {
-        return List.of(new Edge(v1, v2),
-                new Edge(v1, v3),
-                new Edge(v2, v3));
+        return List.of(v1ToV2, v1ToV3, v2ToV3);
     }
 
     //    TODO - test it

@@ -12,7 +12,7 @@ import java.util.Set;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class SolidUnitTest {
+public class ExerciseTest {
     @Test
     public void exercise_2a() {
         //given

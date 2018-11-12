@@ -9,9 +9,17 @@ public class FaceUnitTest {
     @Test
     public void should_calculate_distance_to_point_correctly() {
         //given
-        Point p = new Point(7,1,4);
+        Face face = new Face(
+                new Point(1.0, 1.0, 0.0),
+                new Point(2.0, 2.0, 0.0),
+                new Point(0.0, 2.0, 0.0));
+        Point point = new Point(0, 1, 0);
+
         //when
+        double dist = face.dist(point);
+
         //then
+        assertThat(dist).isEqualTo(1);
     }
 
     @Test
