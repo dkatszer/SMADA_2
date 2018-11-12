@@ -25,16 +25,46 @@ public class Vector {
         );
     }
 
-    public double scalarMultiply(Vector other) {
-        return  this.x * other.x + this.y * other.y + this.z * other.z;
+    public double vectorMultiply2D(Vector other, Dim first, Dim second) {
+        Dim missingDim = Dim.findMissingDim(first, second);
+        Vector vectorProduct = this.vectorMultiply(other);
+        switch (missingDim) {
+            case X:
+                return vectorProduct.x;
+            case Y:
+                return vectorProduct.y;
+            case Z:
+                return vectorProduct.z;
+            default:
+                throw new IllegalStateException();
+        }
     }
 
-    public double angleBetween(Vector other){
+    public double scalarMultiply(Vector other) {
+        return this.x * other.x + this.y * other.y + this.z * other.z;
+    }
+
+    public double angleBetween(Vector other) {
         double scalarProduct = this.scalarMultiply(other);
         double lengthProduct = this.length() * other.length();
         double cosValueOfAngle = scalarProduct / lengthProduct;
         double acosValue = Math.acos(cosValueOfAngle);
         return Math.toDegrees(acosValue);
+    }
+
+    public Vector castTo2D(Dim firstDim, Dim secondDim) {
+        Dim missingDim = Dim.findMissingDim(firstDim, secondDim);
+        switch (missingDim) {
+            case X:
+                return new Vector(0, y, z);
+            case Y:
+                return new Vector(x, 0, z);
+            case Z:
+                return new Vector(x, y, 0);
+            default:
+                throw new IllegalArgumentException();
+        }
+
     }
 
     @Override

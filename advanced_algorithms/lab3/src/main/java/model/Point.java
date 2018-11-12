@@ -1,5 +1,6 @@
 package model;
 
+import model.math.Dim;
 import model.math.Vector;
 
 public class Point {
@@ -20,6 +21,20 @@ public class Point {
 
     public Vector vectorToOtherPoint(Point other) {
         return new Vector(other.x - this.x, other.y - this.y, other.z - this.z);
+    }
+
+    public Point castTo2D(Dim firstDim, Dim secondDim) {
+        Dim missingDim = Dim.findMissingDim(firstDim, secondDim);
+        switch (missingDim) {
+            case X:
+                return new Point(0, y, z);
+            case Y:
+                return new Point(x, 0, z);
+            case Z:
+                return new Point(x, y, 0);
+            default:
+                throw new IllegalStateException();
+        }
     }
 
     @Override

@@ -1,5 +1,6 @@
 package model;
 
+import model.math.Dim;
 import model.math.Vector;
 
 import java.util.stream.DoubleStream;
@@ -33,16 +34,63 @@ public class Edge {
         }
         return normal(point);
     }
+
     public double dist(Edge other) {
+        if (intersectWith(other)) {
+            return 0;
+        }
         return DoubleStream.of(
                 p0.dist(other.p0),
                 p0.dist(other.p1),
                 p1.dist(other.p0),
-                p1.dist(other.p1)
+                p1.dist(other.p1),
+                other.dist(p0),
+                other.dist(p1),
+                this.dist(other.p0),
+                this.dist(other.p1)
         ).min().getAsDouble();
     }
 
-    private double normal(Point point){
+    private boolean intersectWith(Edge other) {
+        boolean xy = intersectWithIn2D(other, Dim.X, Dim.Y);
+        boolean xz = intersectWithIn2D(other, Dim.X, Dim.Z);
+        boolean yz = intersectWithIn2D(other, Dim.Y, Dim.Z);
+        return (xy && xz && yz);
+    }
+
+    /**
+     * I dont care about case when they are collinear and overlap because then min function in dist will find it and return 0
+     */
+    private boolean intersectWithIn2D(Edge other, Dim first, Dim second) {
+        Vector r = edgeVector().castTo2D(first, second);
+        Point p = p0.castTo2D(first, second);
+        Vector s = other.edgeVector().castTo2D(first, second);
+        Point q = other.p0.castTo2D(first, second);
+
+        Vector qMinusP = p.vectorToOtherPoint(q);
+        double rs = r.vectorMultiply2D(s, first, second);
+        if (rs == 0) { //collinear
+            double rDotR = r.scalarMultiply(r);
+            if(rDotR == 0 ){ //this is not included into stackoverflow but it is edge case when length of vector r = 0
+                rDotR = 1;
+            }
+            double t0 = qMinusP.scalarMultiply(r) / rDotR;
+            double t1 = t0 + s.scalarMultiply(r) / rDotR;
+            double min = Math.min(t0, t1);
+            double max = Math.max(t0, t1);
+            return areRangesOverlapping(min, max, 0, 1);
+        } else {
+            double t = qMinusP.vectorMultiply2D(s, first, second) / rs;
+            double u = qMinusP.vectorMultiply2D(r, first, second) / rs;
+            return (0 <= t && t <= 1) && (0 <= u && u <= 1);
+        }
+    }
+
+    private boolean areRangesOverlapping(double firstRangeMin, double firstRangeMax, double secondRangeMin, double secondRangeMax) {
+        return Math.max(firstRangeMin, secondRangeMin) <= Math.min(firstRangeMax, secondRangeMax);
+    }
+
+    private double normal(Point point) {
         Vector edgeVector = edgeVector();
         return point.vectorToOtherPoint(p0).vectorMultiply(edgeVector).length() / edgeVector.length();
     }
