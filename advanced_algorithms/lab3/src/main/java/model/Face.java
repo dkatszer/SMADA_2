@@ -36,7 +36,6 @@ public class Face {
                 return 0;
             }
         }else{
-            //FIXME
             Point pointPlaneProjection = projectionToPlane(point);
             if(isPointOnFace(pointPlaneProjection)){
                 distances.add(perpendicular);
