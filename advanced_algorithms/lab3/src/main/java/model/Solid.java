@@ -10,9 +10,14 @@ public class Solid {
         this.f = new ArrayList<>(f);
     }
 
+    private List<Face> getFaces() {
+        return f;
+    }
     public double dist(Solid other){
-//     TODO - check if it works and if this is what we are supposed to implement ??
-        return f.stream().flatMap(face -> other.f.stream().map(face::dist)).min(Double::compareTo).get();
+        return getFaces().stream()
+                .flatMap(face -> other.getFaces().stream().map(face::dist))
+                .min(Double::compareTo)
+                .get();
     }
 
 

@@ -14,6 +14,14 @@ public class Edge {
         this.p1 = v2;
     }
 
+    public Point getP0() {
+        return p0;
+    }
+
+    public Point getP1() {
+        return p1;
+    }
+
     @Override
     public String toString() {
         return "Edge{" +
@@ -66,9 +74,9 @@ public class Edge {
 
         Vector qMinusP = p.vectorToOtherPoint(q);
         double rs = r.vectorMultiply2D(s, first, second);
-        if (rs == 0) { //collinear
+        if (rs == 0 && qMinusP.vectorMultiply2D(r, first, second) == 0) { //collinear
             double rDotR = r.scalarMultiply(r);
-            if(rDotR == 0 ){ //this is not included into stackoverflow but it is edge case when length of vector r = 0
+            if (rDotR == 0) { //this is not included into stackoverflow but it is edge case when length of vector r = 0
                 rDotR = 1;
             }
             double t0 = qMinusP.scalarMultiply(r) / rDotR;
@@ -92,7 +100,7 @@ public class Edge {
         return point.vectorToOtherPoint(p0).vectorMultiply(edgeVector).length() / edgeVector.length();
     }
 
-    private Vector edgeVector() {
+    public Vector edgeVector() {
         return p0.vectorToOtherPoint(p1);
     }
 }
