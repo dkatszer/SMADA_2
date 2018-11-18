@@ -15,7 +15,7 @@ public class ParallelMatrixMultiply {
     }
 
     private static class MatrixMultiplyTask extends RecursiveTask<Matrix> {
-        private static int THRESHOLD = 3;
+        private static int THRESHOLD = 2;
 
         private ArrayList<Matrix> matrices; // Type of list is present intentionally for specifying list witch is good for performance results.
 
@@ -25,7 +25,7 @@ public class ParallelMatrixMultiply {
 
         @Override
         protected Matrix compute() {
-            if (matrices.size() < THRESHOLD) {
+            if (matrices.size() <= THRESHOLD) {
 //                System.out.println(Thread.currentThread().getName() + "| Process !  matrices.size()=" + matrices.size());
                 return process();
             } else {
