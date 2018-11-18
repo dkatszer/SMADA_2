@@ -26,10 +26,10 @@ public class ParallelMatrixMultiply {
         @Override
         protected Matrix compute() {
             if (matrices.size() < THRESHOLD) {
-                System.out.println(Thread.currentThread().getName() + "| Process !  matrices.size()=" + matrices.size());
+//                System.out.println(Thread.currentThread().getName() + "| Process !  matrices.size()=" + matrices.size());
                 return process();
             } else {
-                System.out.println(Thread.currentThread().getName() + "| Dividing task");
+//                System.out.println(Thread.currentThread().getName() + "| Dividing task");
                 Matrix result = ForkJoinTask.invokeAll(createSubtasks())
                         .stream()
                         .map(ForkJoinTask::join)
@@ -42,8 +42,8 @@ public class ParallelMatrixMultiply {
         private Collection<MatrixMultiplyTask> createSubtasks() {
             ArrayList<MatrixMultiplyTask> dividedTasks = new ArrayList<>();
             int indexInHalf = matrices.size() / 2;
-            System.out.println(Thread.currentThread().getName() + "| First Matrixes from 0 to " + indexInHalf );
-            System.out.println(Thread.currentThread().getName() + "| Second Matrixes from " + indexInHalf + " to " + matrices.size());
+//            System.out.println(Thread.currentThread().getName() + "| First Matrixes from 0 to " + indexInHalf );
+//            System.out.println(Thread.currentThread().getName() + "| Second Matrixes from " + indexInHalf + " to " + matrices.size());
             ArrayList<Matrix> matricesForFirstTask = new ArrayList<>(this.matrices.subList(0, indexInHalf));
             ArrayList<Matrix> matricesForSecondTask = new ArrayList<>(this.matrices.subList(indexInHalf, matrices.size()));
             dividedTasks.add(new MatrixMultiplyTask(matricesForFirstTask));
@@ -54,8 +54,8 @@ public class ParallelMatrixMultiply {
         private Matrix process() {
             Matrix result = matrices.get(0);
             for (int i = 1; i < matrices.size(); i++) {
-                System.out.println(Thread.currentThread().getName() + "| Result = "  + System.lineSeparator() + result);
-                System.out.println(Thread.currentThread().getName() + "| Matrix = " + System.lineSeparator() + matrices.get(i));
+//                System.out.println(Thread.currentThread().getName() + "| Result = "  + System.lineSeparator() + result);
+//                System.out.println(Thread.currentThread().getName() + "| Matrix = " + System.lineSeparator() + matrices.get(i));
                 result = result.multiply(matrices.get(i));
             }
             return result;
