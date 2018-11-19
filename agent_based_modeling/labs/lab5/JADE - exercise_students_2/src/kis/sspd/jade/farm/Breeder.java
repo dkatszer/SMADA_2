@@ -17,7 +17,7 @@ public class Breeder extends Agent {
 	private ArrayList<AgentController> rabbits = new ArrayList<AgentController>();
 	Integer nextRabbitNumber = 0;
 	private ArrayList<AgentController> wolfs = new ArrayList<AgentController>();
-	Integer nextWolfNumber = 0;
+	Integer nextWolfNumber = 1000;
 
 	protected void setup() {
 		if (studentsMail.isEmpty() || studentsName.isEmpty() || studentsId.isEmpty()) {

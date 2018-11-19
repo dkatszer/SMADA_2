@@ -27,7 +27,7 @@ public class RabbitFemale extends Agent {
                 System.out.println("Female " + getLocalName() + " becomes adult.");
             }
             age += 1;
-            if (age == lifetime ) {
+            if (age == lifetime) {
                 ACLMessage message = new ACLMessage(ACLMessage.INFORM);
                 message.addReceiver(new AID(BREEDER_NAME, AID.ISLOCALNAME));
                 message.setContent(getName());
@@ -38,7 +38,18 @@ public class RabbitFemale extends Agent {
 
     private class Listen extends CyclicBehaviour {
         public void action() {
-            //TODO
+            ACLMessage fromWolf = myAgent.blockingReceive(1000);
+            if (fromWolf != null) {
+                ACLMessage message = new ACLMessage(ACLMessage.INFORM);
+                message.addReceiver(new AID(BREEDER_NAME, AID.ISLOCALNAME));
+                message.setContent(getName());
+                send(message);
+
+                ACLMessage reply = fromWolf.createReply();
+                reply.setPerformative(ACLMessage.INFORM);
+                reply.setContent(getName());
+                send(reply);
+            }
         }
     }
 

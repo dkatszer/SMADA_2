@@ -38,7 +38,18 @@ public class RabbitMale extends Agent {
 	
 	private class Behave extends CyclicBehaviour {
 		public void action() {
-			//TODO
+			ACLMessage fromWolf = myAgent.blockingReceive(1000);
+			if (fromWolf != null) {
+				ACLMessage message = new ACLMessage(ACLMessage.INFORM);
+				message.addReceiver(new AID(BREEDER_NAME, AID.ISLOCALNAME));
+				message.setContent(getName());
+				send(message);
+
+				ACLMessage reply = fromWolf.createReply();
+				reply.setPerformative(ACLMessage.INFORM);
+				reply.setContent(getName());
+				send(reply);
+			}
 		}
 	}
 	
