@@ -90,7 +90,9 @@ public class Breeder extends Agent {
 					rabbit2Remove = rabbit;
 				}
 			}
-			System.out.println("Rabbit " + rabbit2Remove.getName() + " is going to die.");
+			if(rabbit2Remove!=null) {
+				System.out.println("Rabbit " + rabbit2Remove.getName() + " is going to die.");
+			}
 			rabbits.remove(rabbit2Remove);
 		} catch (StaleProxyException e) {
 			e.printStackTrace();

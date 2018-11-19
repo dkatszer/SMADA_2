@@ -27,7 +27,7 @@ public class RabbitFemale extends Agent {
                 System.out.println("Female " + getLocalName() + " becomes adult.");
             }
             age += 1;
-            if (age > lifetime) {
+            if (age == lifetime ) {
                 ACLMessage message = new ACLMessage(ACLMessage.INFORM);
                 message.addReceiver(new AID(BREEDER_NAME, AID.ISLOCALNAME));
                 message.setContent(getName());
