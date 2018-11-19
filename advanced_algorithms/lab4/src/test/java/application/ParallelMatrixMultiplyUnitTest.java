@@ -4,12 +4,12 @@ import model.Matrix;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.concurrent.ForkJoinPool;
 
-import static org.junit.Assert.*;
 import static org.assertj.core.api.Assertions.*;
 
 public class ParallelMatrixMultiplyUnitTest {
-    private ParallelMatrixMultiply objectUnderTest = new ParallelMatrixMultiply();
+    private ParallelMatrixMultiply objectUnderTest = new ParallelMatrixMultiply(ForkJoinPool.commonPool());
     @Test
     public void should_multiplyTwoMatricesCorrectly() {
         //given

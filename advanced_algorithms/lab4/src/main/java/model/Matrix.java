@@ -1,7 +1,6 @@
 package model;
 
 import java.util.Arrays;
-import java.util.stream.IntStream;
 
 public class Matrix {
     private double[][] matrix;
@@ -10,23 +9,23 @@ public class Matrix {
         this.matrix = matrix;
     }
 
-    public static Matrix of(Row... rows){
+    public static Matrix of(Row... rows) {
         double[][] matrixResult = new double[rows.length][rows[0].values.length];
         int columnsNo = rows[0].values.length;
-        for(int rowId = 0; rowId < rows.length ; rowId++){
+        for (int rowId = 0; rowId < rows.length; rowId++) {
             double[] rowValues = rows[rowId].values;
-            if(rowValues.length!=columnsNo){
+            if (rowValues.length != columnsNo) {
                 throw new RuntimeException("rows have different number of columns");
             }
-            for(int colId = 0; colId< rowValues.length ; colId++){
+            for (int colId = 0; colId < rowValues.length; colId++) {
                 matrixResult[rowId][colId] = rowValues[colId];
             }
         }
         return new Matrix(matrixResult);
     }
 
-    public Matrix multiply(Matrix other){
-        if(getColumnsNo()!=other.getRowsNo()){
+    public Matrix multiply(Matrix other) {
+        if (getColumnsNo() != other.getRowsNo()) {
             String message = "These matrixes cannot be multiplied."
                     + System.lineSeparator()
                     + this.toString()
@@ -35,7 +34,7 @@ public class Matrix {
             throw new IllegalArgumentException(message);
         }
         double[][] result = new double[getRowsNo()][other.getColumnsNo()];
-        for(int k = 0 ; k < other.getColumnsNo() ; k++) {
+        for (int k = 0; k < other.getColumnsNo(); k++) {
             for (int i = 0; i < getRowsNo(); i++) {
                 double sum = 0;
                 for (int j = 0; j < getColumnsNo(); j++) {
@@ -47,11 +46,11 @@ public class Matrix {
         return new Matrix(result);
     }
 
-    public int getColumnsNo(){
+    public int getColumnsNo() {
         return matrix[0].length;
     }
 
-    public int getRowsNo(){
+    public int getRowsNo() {
         return matrix.length;
     }
 
@@ -72,9 +71,9 @@ public class Matrix {
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        for (double[] row: matrix) {
+        for (double[] row : matrix) {
             sb.append(Arrays.toString(row))
-                .append(System.lineSeparator());
+                    .append(System.lineSeparator());
         }
         return sb.toString();
     }
@@ -87,7 +86,7 @@ public class Matrix {
             this.values = values;
         }
 
-        public static Row of(double ... values){
+        public static Row of(double... values) {
             return new Row(values);
         }
     }

@@ -9,13 +9,18 @@ import java.util.concurrent.ForkJoinTask;
 import java.util.concurrent.RecursiveTask;
 
 public class ParallelMatrixMultiply {
+    private final ForkJoinPool commonPool;
+
+    public ParallelMatrixMultiply(ForkJoinPool commonPool) {
+        this.commonPool = commonPool;
+    }
+
     public Matrix multiply(ArrayList<Matrix> matrices) {
-        ForkJoinPool commonPool = ForkJoinPool.commonPool();
         return commonPool.invoke(new MatrixMultiplyTask(matrices));
     }
 
     private static class MatrixMultiplyTask extends RecursiveTask<Matrix> {
-        private static int THRESHOLD = 2;
+        private static int THRESHOLD = 3;
 
         private ArrayList<Matrix> matrices; // Type of list is present intentionally for specifying list witch is good for performance results.
 
@@ -54,7 +59,7 @@ public class ParallelMatrixMultiply {
         private Matrix process() {
             Matrix result = matrices.get(0);
             for (int i = 1; i < matrices.size(); i++) {
-//                System.out.println(Thread.currentThread().getName() + "| Result = "  + System.lineSeparator() + result);
+//                System.out.println(Thread.currenI4mBewstThread().getName() + "| Result = "  + System.lineSeparator() + result);
 //                System.out.println(Thread.currentThread().getName() + "| Matrix = " + System.lineSeparator() + matrices.get(i));
                 result = result.multiply(matrices.get(i));
             }
