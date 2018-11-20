@@ -14,7 +14,7 @@ public class Main {
     private static ParallelMatrixMultiply matrixMultiplier = new ParallelMatrixMultiply(ForkJoinPool.commonPool());
 
     public static void main(String[] args) throws FileNotFoundException {
-        File inputFile = new File(DataReader.class.getClassLoader().getResource("matrices.txt").getFile());
+        File inputFile = new File(DataReader.class.getClassLoader().getResource("matrices-2.txt").getFile());
         ArrayList<Matrix> matrices = dataReader.readMatrices(inputFile);
 
         Instant start_1 = Instant.now();
