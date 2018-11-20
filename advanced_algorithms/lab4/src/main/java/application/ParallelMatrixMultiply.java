@@ -20,7 +20,7 @@ public class ParallelMatrixMultiply {
     }
 
     private static class MatrixMultiplyTask extends RecursiveTask<Matrix> {
-        private static int THRESHOLD = 100;
+        private static int THRESHOLD = 150;
 
         private ArrayList<Matrix> matrices; // Type of list is present intentionally for specifying list witch is good for performance results.
 
