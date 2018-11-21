@@ -81,18 +81,6 @@ public class Face {
         ).min().getAsDouble();
     }
 
-    private boolean intersectsWithEdge(Edge edge) {
-        return false;
-//        Point v0 = v3;
-//        Vector n = normalToFace();
-//        double s = n.scalarMultiply(edge.getP0().vectorToOtherPoint(v0)) / n.scalarMultiply(edge.edgeVector());
-//        return 0 <= s && s <= 1;
-    }
-
-    private boolean intersectsWithFace(Face face) {
-        return false; //TODO - implement it
-    }
-
     public double dist(Face other) {
         if (intersectsWithFace(other)) {
             return 0;
@@ -105,10 +93,21 @@ public class Face {
         }
     }
 
-
     private Vector normalToFace() {
         Vector u = v3.vectorToOtherPoint(v2);
         Vector v = v3.vectorToOtherPoint(v1);
         return u.vectorMultiply(v);
+    }
+
+    private boolean intersectsWithEdge(Edge edge) {
+        return false;
+//        Point v0 = v3;
+//        Vector n = normalToFace();
+//        double s = n.scalarMultiply(edge.getP0().vectorToOtherPoint(v0)) / n.scalarMultiply(edge.edgeVector());
+//        return 0 <= s && s <= 1;
+    }
+
+    private boolean intersectsWithFace(Face face) {
+        return false; //TODO - implement it
     }
 }

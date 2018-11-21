@@ -1,4 +1,4 @@
-
+*.individuals.txt
 # Created by https://www.gitignore.io/api/git,java,less,sass,python,django,angular,intellij+all
 
 ### Angular ###
