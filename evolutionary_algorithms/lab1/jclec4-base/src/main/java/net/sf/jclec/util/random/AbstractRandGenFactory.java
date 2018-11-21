@@ -76,8 +76,8 @@ public abstract class AbstractRandGenFactory implements IRandGenFactory, IConfig
 	public void configure(Configuration settings) 
 	{
 		// Getting seed parameter
-		int seed = settings.getInt("[@seed]", 1234567890);
+//		int seed = settings.getInt("[@seed]", 1234567890);
 		// Setting seed
-		setSeed(seed);
+		setSeed((int) System.currentTimeMillis());
 	}
 }

@@ -1,1 +1,0 @@
-net.sf.jclec.realarray.RealArrayIndividual@4690b489[genotype={1.1054680227385996,0.08121083145743933,1.7608067920992667,0.9949551996576759,2.8138332585530885},fitness=net.sf.jclec.fitness.SimpleValueFitness@3eb7fc54[value=32.04947458839094]]

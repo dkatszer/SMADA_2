@@ -137,6 +137,6 @@ public class SimpleValueFitness extends AbstractFitness implements ISimpleFitnes
 	@Override
     public String toString() 
     {
-        return value + "";
+        return (value + "").replace(".",",");
     }
 }
